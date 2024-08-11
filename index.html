@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <div id="weather-container">
+            <h2>Weather App</h2>
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button> <!-- Runs a  JS function once button is clicked-->
+
+
+            <img id="weather-icon" alt="Weather Icon">
+
+            <!--The divs down below will have certain information pertaining to the type of weather you are having-->
+            <div id="temp-div"></div> <!-- This div will hold the temperature -->
+
+            <div id="weather-info"></div> <!-- This div will hold the weather information -->
+
+            <div id="hourly-forecast"></div> <!-- This div will hold the hourly forecast at the bototm-->
+        </div>
+            <script src="./script.js"></script> <!-- This will connect our javascript file to the weather app-->
+    </body>
+</html>
